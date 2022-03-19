@@ -14,42 +14,7 @@ import java.util.Scanner;
 public class Variable17 {
 
   public static void main(String[] args) {
-    Scanner scanner = new Scanner (System.in);
-
-    int k = scanner.nextInt (); {
-
-      if (k > 0 && k < 10)
-      {
-        System.out.println("Это однозначное положительное число");
-      }
-      else if (k > 9 && k < 100) {
-
-        System.out.println("Это двухзначное положительное число");
-      }
-      else if (k > 99 && k < 1000) {
-
-        System.out.println ("Это трехзначное положительное число");
-      }
-
-      else if (k < 0 && k > -10) {
-
-        System.out. println ("Это однозначное отрицательно число");
-      }
-
-      else if (k <-9 && k > -100) {
-
-        System.out.println ("Это двухзначное отрицательное число ");
-      }
-
-      else if (k < -99 && k > -1000) {
-
-        System.out.println ("Это трехзначное отрицательно число");
-      }
-
-      else {
-        System.out.println("Другое");
-      }
-    }
+    //напишите тут ваш код
   }
 
   public static void div(double a, double b){
