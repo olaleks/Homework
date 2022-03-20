@@ -20,11 +20,11 @@ public class List3 {
   }
 
   public static void main(String[] args) {
-    var arrayList = new ArrayList<>();
-    arrayList.add(15);
-    arrayList.add("Hello");
-    arrayList.add(154);
-    arrayList.add("string2");
+//    var arrayList = new ArrayList<>();
+//    arrayList.add(15);
+//    arrayList.add("Hello");
+//    arrayList.add(154);
+//    arrayList.add("string2");
 
 //    printAnything(arrayList);
   }
