@@ -43,11 +43,11 @@ public class List5 {
   public static void removeGlassesReverse(ArrayList<String> glasses) {
     System.out.println("Начинаем разбирать пирамиду...");
 
-    //напишите тут ваш код
-
-    if(glasses.size() == 0) {
-      System.out.println("Пирамида разобрана!");
+    while (glasses.size()>0){
+      glasses.remove(glasses.size()-1);
     }
+    System.out.println("Пирамида разобрана!");
+
   }
 
   public static void main(String[] args) {
