@@ -1,6 +1,5 @@
 package com.homework.oop7.poliformism.predators;
 
-import oop7.poliformism.right_movement.Animal;
 
 /**
  * Перед тобой 4 класса животных — Cow, Lion, Wolf и Elephant. Корова (Cow) и слон (Elephant) являются травоядными, поэтому они наследуются от класса Herbivore.
