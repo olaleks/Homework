@@ -10,7 +10,7 @@ public class Robot {
 
   public static int productionYear;
 
-  public static String vendor = "Javarush Co.";
+  public static String vendor = "Marvel Co.";
 
   public Robot(String model, int productionYear) {
     this.model = model;
