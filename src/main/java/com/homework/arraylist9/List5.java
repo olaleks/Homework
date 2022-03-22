@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * В тестировании тебе поможет метод main.
  * Попробуй запустить программу и посмотреть на вывод.
  * Требования:
- * •	В классе Solution должен быть публичный статический метод removeGlassesReverse(ArrayList<String>).
+ * •	В классе List5 должен быть публичный статический метод removeGlassesReverse(ArrayList<String>).
  * •	Метод removeGlassesReverse должен удалить все элементы из переданного списка, начиная с конца (используй метод remove(int) у списка).
  */
 
