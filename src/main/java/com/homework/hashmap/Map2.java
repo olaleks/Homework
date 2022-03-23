@@ -1,6 +1,7 @@
 package com.homework.hashmap;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * В классе Map2 есть метод getProgrammingLanguages,
@@ -12,22 +13,24 @@ import java.util.ArrayList;
  */
 
 public class Map2 {
+    public static HashMap<Integer, String> programmingLanguages = new HashMap<>();
 
-  public static void main(String[] args) {
-    System.out.println(getProgrammingLanguages());
-  }
+    public static void main(String[] args) {
 
-  public static ArrayList<String> getProgrammingLanguages() {
-    //напишите тут ваш код
-    ArrayList<String> programmingLanguages = new ArrayList<>();
-    programmingLanguages.add("Java");
-    programmingLanguages.add("Kotlin");
-    programmingLanguages.add("Go");
-    programmingLanguages.add("Javascript");
-    programmingLanguages.add("Typescript");
-    programmingLanguages.add("Python");
-    programmingLanguages.add("PHP");
-    programmingLanguages.add("C++");
-    return programmingLanguages;
-  }
+        System.out.println(getProgrammingLanguages());
+    }
+
+    public static HashMap<Integer, String> getProgrammingLanguages() {
+
+        programmingLanguages.put(1, "Java");
+        programmingLanguages.put(2, "Kotlin");
+        programmingLanguages.put(3, "Go");
+        programmingLanguages.put(4, "Javascript");
+        programmingLanguages.put(5, "Typescript");
+        programmingLanguages.put(6, "Python");
+        programmingLanguages.put(7, "PHP");
+        programmingLanguages.put(8, "C++");
+
+        return programmingLanguages;
+    }
 }

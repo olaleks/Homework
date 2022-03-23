@@ -21,6 +21,10 @@ public class Map {
   }
 
   public static void addStudents() {
-    //напишите тут ваш код
+    grades.put("Иванов Александр", 7.8);
+    grades.put("Петров Алексей", 9.0);
+    grades.put("Семенов Сергей", 8.6);
+    grades.put("Лобанов Семен", 8.5);
+    grades.put("Воровьев Дмитрий", 8.0);
   }
 }

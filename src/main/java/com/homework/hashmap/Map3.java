@@ -31,6 +31,8 @@ public class Map3 {
   }
 
   public static void printStudentsInfo() {
-    //напишите тут ваш код
+    for (String name : grades.keySet()){
+      System.out.println(name + ": " + grades.get(name));
+    }
   }
 }
