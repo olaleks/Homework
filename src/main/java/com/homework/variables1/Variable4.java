@@ -15,9 +15,9 @@ public class Variable4 {
 
   public static void main(String[] args) {
     int toothCounter = 32;
-
-    //напишите тут ваш код
-
+    for (int i = 1; i<10; i++){
+      toothCounter = --toothCounter;
+    }
 
     System.out.println(toothCounter);
   }

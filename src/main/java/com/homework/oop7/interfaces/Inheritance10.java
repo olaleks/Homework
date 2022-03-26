@@ -17,18 +17,28 @@ package com.homework.oop7.interfaces;
 public class Inheritance10 {
 
   public interface Flyable {
-    default int getMaxSpeed(){
-      return 80;
-    }
-  }
+    int getMaxSpeed();
 
   public class Aircraft implements Flyable {
+    @Override
+    public int getMaxSpeed() {
+      return 1200;
+    }
+  }
   }
 
   public class Eagle implements Flyable {
+    @Override
+    public int getMaxSpeed() {
+      return 180;
+    }
   }
 
   public class Raven implements Flyable {
+    @Override
+    public int getMaxSpeed() {
+      return 48;
+    }
   }
 
 }

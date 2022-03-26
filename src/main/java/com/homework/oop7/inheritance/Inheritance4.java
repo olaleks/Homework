@@ -18,11 +18,11 @@ public class Inheritance4 {
   public static void main(String[] args) {
   }
 
-  public class Manager {
+  public class Manager extends Employee{
 
   }
 
-  public class Chief {
+  public class Chief extends Employee{
 
   }
 
@@ -30,7 +30,7 @@ public class Inheritance4 {
 
   }
 
-  public class Secretary {
+  public class Secretary extends Employee{
 
   }
 }

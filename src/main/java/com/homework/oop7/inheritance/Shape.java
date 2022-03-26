@@ -8,6 +8,8 @@ package com.homework.oop7.inheritance;
  * Также сделай задел на будущее и создай в нем абстрактные методы getPerimeter() и getArea(). Методы будут возвращать значение типа double.
  */
 
-public class Shape {
-  //напишите тут ваш код
+public abstract class Shape {
+  public abstract double getPerimeter();
+  public abstract double getArea();
+
 }

@@ -16,7 +16,7 @@ public class Variable7 {
     String bigAmount = "500";
     String greatAmount = "100000";
 
-    int hugeAmount = 0; //напишите тут ваш код
+    int hugeAmount = Integer.parseInt(bigAmount)+Integer.parseInt(greatAmount);
 
     System.out.println(hugeAmount);
   }

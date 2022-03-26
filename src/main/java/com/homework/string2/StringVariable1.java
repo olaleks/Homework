@@ -26,8 +26,20 @@ public class StringVariable1 {
   public static void main(String[] args) {
     String same = "ссылки на строки одинаковые";
     String different = "ссылки на строки разные";
-    //напишите тут ваш код
-    System.out.println(same);
-    System.out.println(different);
+    if (string1 == string2) {
+      System.out.println(same + " при сравнении строк 1 и 2");
+    } else {
+      System.out.println(different + " при сравнении строк 1 и 2");
+    }
+    if (string2 == string3) {
+      System.out.println(same + " при сравнении строк 2 и 3");
+    } else {
+      System.out.println(different + " при сравнении строк 2 и 3");
+    }
+    if (string1 == string3) {
+      System.out.println(same +" при сравнении строк 1 и 3");
+    } else {
+      System.out.println(different + " при сравнении строк 1 и 3");
+    }
   }
 }

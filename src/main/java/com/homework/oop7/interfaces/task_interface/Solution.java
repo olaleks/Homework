@@ -29,7 +29,7 @@ public class Solution {
   }
 
   public static void createKeyboardOrchestra() {
-    //напишите тут ваш код
+    orchestra.add();
   }
 
   public static void createStringedOrchestra() {

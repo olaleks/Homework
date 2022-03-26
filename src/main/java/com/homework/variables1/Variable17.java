@@ -14,7 +14,9 @@ import java.util.Scanner;
 public class Variable17 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    div(0.0, 3.0);
+    div(-0.0, 1.3);
+
   }
 
   public static void div(double a, double b){

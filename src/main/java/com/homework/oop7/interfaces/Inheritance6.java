@@ -23,16 +23,16 @@ public class Inheritance6 {
   public class Fire {
   }
 
-  public class Carrot {
+  public class Carrot implements Eatable{
   }
 
   public class Stone {
   }
 
-  public class Apple {
+  public class Apple implements Eatable{
   }
 
-  public class Fish {
+  public class Fish implements Eatable{
   }
 
   public interface Eatable {

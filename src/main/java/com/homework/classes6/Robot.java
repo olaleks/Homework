@@ -4,13 +4,13 @@ public class Robot {
 
   public static int robotCounter;
 
-  public static int id;
+  public int id;
 
-  public static String model;
+  public String model;
 
-  public static int productionYear;
+  public int productionYear;
 
-  public static String vendor = "Marvel Co.";
+  public static String vendor = "Javarush Co.";
 
   public Robot(String model, int productionYear) {
     this.model = model;
@@ -20,6 +20,6 @@ public class Robot {
 
   public void displayInformation() {
     System.out.printf("Я %d-й из %d роботов. Модель: %s. Произведен компанией %s в %d году.\n",
-        id, robotCounter, model, vendor, productionYear);
+            id, robotCounter, model, vendor, productionYear);
   }
 }

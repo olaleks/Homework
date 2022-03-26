@@ -13,16 +13,16 @@ package com.homework.oop7.interfaces;
 
 public class Inheritance8 {
 
-  public class Ship {
+  public class Ship implements Swimmable {
   }
 
   public interface Swimmable {
   }
 
-  public class JamesBondCar {
+  public class JamesBondCar implements Flyable, Swimmable {
   }
 
-  public class Zeppelin {
+  public class Zeppelin implements Flyable{
   }
 
   public interface Flyable {

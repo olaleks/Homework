@@ -14,13 +14,14 @@ package com.homework.oop7.interfaces;
 
 public class Inheritance7 {
 
-  public interface Sing {
+  public interface Sing extends Artist {
   }
 
-  public interface Dance {
+  public interface Dance extends Artist{
   }
 
-  public interface Artist { // думаем
+  public interface Artist {
+
   }
 
 }

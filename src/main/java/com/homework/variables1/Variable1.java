@@ -14,7 +14,7 @@ package com.homework.variables1;
 public class Variable1 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    int intValue=12, numericValue=3, size=567, number=-16;
 
   }
 }

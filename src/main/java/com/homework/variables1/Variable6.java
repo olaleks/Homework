@@ -15,7 +15,7 @@ public class Variable6 {
   public static void main(String[] args) {
     String emptiness = "пустота";
 
-    String fullness = ""; //напишите тут ваш код
+    String fullness = emptiness + " " + emptiness + " " + emptiness;
 
     System.out.println(fullness);
   }

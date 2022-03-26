@@ -10,12 +10,12 @@ package com.homework.oop7.inheritance;
 
 public class Inheritance {
 
-  public class Woman {
+  public class Woman extends Human {
   }
 
   public class Terran {
   }
 
-  public class Human {
+  public class Human extends Terran{
   }
 }

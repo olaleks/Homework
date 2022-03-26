@@ -17,7 +17,7 @@ package com.homework.variables1;
 public class Variable5 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    String word = "слово", phrase = "не воробей", line = "вылетит", text = "не поймаешь!";
 
   }
 }

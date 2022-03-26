@@ -8,5 +8,11 @@ package com.homework.oop7.interfaces;
  * •	Должен быть создан публичный интерфейс Flyable.
  */
 
-public class Inheritance5 { // не относится к заданию, создаем новые интерфейсы
+public class Inheritance5 {
+    public interface Swimmable{
+        public void swim();
+    }
+    public interface Flyable{
+        public void fly();
+    }
 }

@@ -12,19 +12,23 @@ package com.homework.oop7.inheritance;
  * •	Метод setAge(int) должен устанавливать переданное значение полю age.
  */
 
-public abstract class Person {
-  private String name;
-  private int age;
+public class Person {
+    private String name;
+    private int age;
 
-  public abstract String getName();
+    public String getName(String name) {
+        return name;
+    }
 
-  public void setName(String name) {
-    this.name = name;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-  public int getAge() {
-    return age;
-  }
+    public int getAge() {
+        return age;
+    }
 
-  public abstract void setAge(int age);
+    public void setAge(int age) {
+        this.age = age;
+    }
 }

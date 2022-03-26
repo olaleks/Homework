@@ -13,36 +13,26 @@ package com.homework.oop7.interfaces;
 public class Inheritance9 {
 
   public interface Vehicle {
-    void start();
+    default void start(){
+      System.out.println("Начинаю движение.");
+    }
     void move();
-    void stop();
+
+    default void stop(){
+      System.out.println("Останавливаюсь.");
+    }
   }
 
   public class Car implements Vehicle {
-    public void start() {
-      System.out.println("Начинаю движение.");
-    }
-
     public void move() {
       System.out.println("Еду со средней скоростью 70 км/ч.");
     }
 
-    public void stop() {
-      System.out.println("Останавливаюсь.");
+    public class Bus implements Vehicle {
+      public void move() {
+        System.out.println("Еду со средней скоростью 50 км/ч.");
+      }
     }
   }
 
-  public class Bus implements Vehicle{
-    public void start() {
-      System.out.println("Начинаю движение.");
-    }
-
-    public void move() {
-      System.out.println("Еду со средней скоростью 50 км/ч.");
-    }
-
-    public void stop() {
-      System.out.println("Останавливаюсь.");
-    }
-  }
 }
