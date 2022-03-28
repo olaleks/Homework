@@ -1,5 +1,7 @@
 package com.homework.stream11;
 
+import java.util.Scanner;
+
 /**
  *
  Напиши программу, которая будет считывать с клавиатуры строки, и если данная строка — это путь к существующему файлу,
@@ -22,6 +24,14 @@ public class File {
   private static final String THIS_IS_DIR = " - это директория";
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    Scanner scanner = new Scanner(System.in);
+    while (true){
+      String str = scanner.nextLine();
+      if (str.isEmpty()){
+        break;
+      }
+      //if ()
+    }
+
   }
 }

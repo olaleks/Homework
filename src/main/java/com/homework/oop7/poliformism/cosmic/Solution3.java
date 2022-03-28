@@ -1,5 +1,7 @@
 package com.homework.oop7.poliformism.cosmic;
 
+import com.homework.oop7.poliformism.predators.Predator;
+
 import java.util.ArrayList;
 
 /**
@@ -29,8 +31,23 @@ public class Solution3 {
   }
 
   public static void runWorkingProcess() {
-    //напишите тут ваш код
+    for (int i = 0; i< astronauts.size(); i++) {
+      if (astronauts.get(i) instanceof Human) {
+        pilot(new Human());
+      }
+    }
+    for (int i = 0; i< astronauts.size(); i++) {
+      if (astronauts.get(i) instanceof Dog) {
+        createDirection(new Dog());
+      }
+    }
+    for (int i = 0; i< astronauts.size(); i++) {
+      if (astronauts.get(i) instanceof Cat) {
+        research(new Cat());
+      }
+    }
   }
+
 
   public static void pilot(Human human) {
     System.out.println("Член экипажа " + human.getInfo() + " пилотирует корабль.");
@@ -45,10 +62,10 @@ public class Solution3 {
   }
 
   public static void createCrew() {
-//    astronauts.add(new Human());
-//    astronauts.add(new Human());
-//    astronauts.add(new Dog());
-//    astronauts.add(new Cat());
+    astronauts.add(new Human());
+    astronauts.add(new Human());
+    astronauts.add(new Dog());
+    astronauts.add(new Cat());
   }
 
   public static void printCrewInfo() {
