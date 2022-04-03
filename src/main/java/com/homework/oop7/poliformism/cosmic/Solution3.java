@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * Human — в метод pilot(Human human);
  * Dog — в метод createDirection(Dog dog);
  * Cat — в метод research(Cat cat).
- *
+ * <p>
  * Метод runWorkingProcess() должен работать корректно независимо от количества астронавтов и порядка их добавления в astronauts.
  * Требования:
  * •	Метод runWorkingProcess() должен вызывать pilot(Human human) для каждого объекта Human из списка astronauts.
@@ -22,56 +22,56 @@ import java.util.ArrayList;
  */
 
 public class Solution3 {
-  public static ArrayList<Astronaut> astronauts = new ArrayList<>();
+    public static ArrayList<Astronaut> astronauts = new ArrayList<>();
 
-  public static void main(String[] args) {
-    createCrew();
-    printCrewInfo();
-    runWorkingProcess();
-  }
-
-  public static void runWorkingProcess() {
-    for (int i = 0; i< astronauts.size(); i++) {
-      if (astronauts.get(i) instanceof Human) {
-        pilot(new Human());
-      }
+    public static void main(String[] args) {
+        createCrew();
+        printCrewInfo();
+        runWorkingProcess();
     }
-    for (int i = 0; i< astronauts.size(); i++) {
-      if (astronauts.get(i) instanceof Dog) {
-        createDirection(new Dog());
-      }
+
+    public static void runWorkingProcess() {
+        for (int i = 0; i < astronauts.size(); i++) {
+            if (astronauts.get(i) instanceof Human) {
+                pilot(new Human());
+            }
+        }
+        for (int i = 0; i < astronauts.size(); i++) {
+            if (astronauts.get(i) instanceof Dog) {
+                createDirection(new Dog());
+            }
+        }
+        for (int i = 0; i < astronauts.size(); i++) {
+            if (astronauts.get(i) instanceof Cat) {
+                research(new Cat());
+            }
+        }
     }
-    for (int i = 0; i< astronauts.size(); i++) {
-      if (astronauts.get(i) instanceof Cat) {
-        research(new Cat());
-      }
+
+
+    public static void pilot(Human human) {
+        System.out.println("Член экипажа " + human.getInfo() + " пилотирует корабль.");
     }
-  }
 
-
-  public static void pilot(Human human) {
-    System.out.println("Член экипажа " + human.getInfo() + " пилотирует корабль.");
-  }
-
-  public static void createDirection(Dog dog) {
-    System.out.println("Член экипажа " + dog.getInfo() + " занимается созданием навигационного маршрута.");
-  }
-
-  public static void research(Cat cat) {
-    System.out.println("Член экипажа " + cat.getInfo() + " исследует ближайшие планеты.");
-  }
-
-  public static void createCrew() {
-    astronauts.add(new Human());
-    astronauts.add(new Human());
-    astronauts.add(new Dog());
-    astronauts.add(new Cat());
-  }
-
-  public static void printCrewInfo() {
-    System.out.println("На борт погружены члены экипажа: ");
-    for (Astronaut astronaut : astronauts) {
-      System.out.println(astronaut.getInfo());
+    public static void createDirection(Dog dog) {
+        System.out.println("Член экипажа " + dog.getInfo() + " занимается созданием навигационного маршрута.");
     }
-  }
+
+    public static void research(Cat cat) {
+        System.out.println("Член экипажа " + cat.getInfo() + " исследует ближайшие планеты.");
+    }
+
+    public static void createCrew() {
+        astronauts.add(new Human());
+        astronauts.add(new Human());
+        astronauts.add(new Dog());
+        astronauts.add(new Cat());
+    }
+
+    public static void printCrewInfo() {
+        System.out.println("На борт погружены члены экипажа: ");
+        for (Astronaut astronaut : astronauts) {
+            System.out.println(astronaut.getInfo());
+        }
+    }
 }

@@ -1,5 +1,7 @@
 package com.homework.for_while_do_while4;
 
+import java.util.Scanner;
+
 /**
  * В этой задаче нужно:
  *
@@ -24,7 +26,17 @@ package com.homework.for_while_do_while4;
 public class Cycle8 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-
+    Scanner scanner = new Scanner(System.in);
+    String str = scanner.nextLine();
+    int number = scanner.nextInt();
+    int i = 0;
+    if (number > 0 && number < 5) {
+      do {
+        System.out.println(str);
+        i++;
+      } while (i < number);
+    } else{
+      System.out.println(str);
+    }
   }
 }

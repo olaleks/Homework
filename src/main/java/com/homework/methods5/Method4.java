@@ -26,7 +26,12 @@ public class Method4 {
   }
 
   public static void reverseArray(int[] array) {
-    //напишите тут ваш код
+    for (int i = 0; i < array.length / 2; i++) {
+      int a = array[i];
+      array[i] = array[array.length - 1 - i];
+      array[array.length - 1 - i] = a;
+
+    }
   }
 
   public static void printArray(int[] array) {

@@ -22,8 +22,11 @@ public class Cycle7 {
     int multiple = scanner.nextInt();
 
     int sum = 0;
-    //напишите тут ваш код
-
+    for (int i = start; i < end ; i++) {
+      if (i % multiple == 0){
+        sum = sum + i;
+      }
+    }
     System.out.println(sum);
   }
 }

@@ -18,5 +18,7 @@ public class Path0 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     String str = scanner.nextLine();
+    Path path = Path.of(str);
+    System.out.println(path.getRoot());
   }
 }

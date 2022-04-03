@@ -5,7 +5,7 @@ public class Window {
   private int width = 3;
 
   public void changeSize(int height, int width){
-    height = height;
+    this.height = height;
     width = width;
   }
 

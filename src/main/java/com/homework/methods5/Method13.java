@@ -19,11 +19,11 @@ public class Method13 {
   public int salary = 10_000;
 
   public void setPosition(String position) {
-    position = position;
+    this.position = position;
   }
 
   public void setSalary(int salary) {
-    salary = salary;
+    this.salary = salary;
   }
 }
 

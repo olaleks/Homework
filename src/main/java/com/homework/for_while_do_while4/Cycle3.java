@@ -19,7 +19,15 @@ package com.homework.for_while_do_while4;
 public class Cycle3 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-
+    int h = 0;
+    while (h < 5){
+      int w = 0;
+      while (w < 10){
+        System.out.print("Q");
+        w++;
+      }
+      System.out.println();
+      h++;
+    }
   }
 }

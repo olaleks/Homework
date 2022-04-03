@@ -23,7 +23,6 @@ public class Incapsulation1 {
     private int speed;
 
     public Cat(String name, int age, int weight) {
-
     }
 
     public String getName() {
@@ -35,11 +34,9 @@ public class Incapsulation1 {
     }
 
     public void setWeight(int weight) {
-
     }
 
     public void setSpeed(int speed) {
-
     }
   }
 }

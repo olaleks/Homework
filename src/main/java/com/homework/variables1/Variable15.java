@@ -21,5 +21,4 @@ public class Variable15 {
         boolean h;
 
     }
-  //напишите тут ваш код
 }

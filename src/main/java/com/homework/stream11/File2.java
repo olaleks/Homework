@@ -1,6 +1,8 @@
 package com.homework.stream11;
 
 import java.io.IOException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Scanner;
 
@@ -29,12 +31,19 @@ import java.util.Scanner;
 public class File2 {
 
 
-  private static final String THIS_IS_FILE = " - это файл";
-  private static final String THIS_IS_DIR = " - это директория";
+  private static final String THIS_IS_FILE = " - this is file";
+  private static final String THIS_IS_DIR = " - this is directory";
 
   public static void main(String[] args) throws IOException {
     Scanner scanner = new Scanner(System.in);
     Path directory = Path.of(scanner.nextLine());
-    //напишите тут ваш код
+    DirectoryStream<Path> pathList = Files.newDirectoryStream(directory);
+    for (Path path : pathList) {
+      if (Files.isDirectory(path)) {
+        System.out.println(path + THIS_IS_DIR);
+      } else if (Files.isRegularFile(path)) {
+        System.out.println(path + THIS_IS_FILE);
+      }
+    }
   }
 }

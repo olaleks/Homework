@@ -19,9 +19,9 @@ package com.homework.variables1;
 public class Variable16 {
 
   double earthDiameter = 1.2742E+4;
-  double lightSpeed1 = 2.99792458E+8;
-  double uraniumAtomicMass1 = 2.380289E+2;
-  double averageBeeWeight1 = 8.5E-2;
-  double javaDeveloperSalary1 = 1E+4;
+  double lightSpeed = 2.99792458E+8;
+  double uraniumAtomicMass = 2.380289E+2;
+  double averageBeeWeight = 8.5E-2;
+  double javaDeveloperSalary = 1.E+4;
 
 }

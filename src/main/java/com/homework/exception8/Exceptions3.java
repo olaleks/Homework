@@ -48,8 +48,13 @@ public class Exceptions3 {
         break;
       }
 
-      int studentId = Integer.parseInt(input);
+      try {int studentId = Integer.parseInt(input);
       System.out.println(ANSWERING + studentsJournal.get(studentId));
+      } catch (NumberFormatException e){
+        System.out.println("Нужно ввести целое число");
+      } catch (ArrayIndexOutOfBoundsException e){
+        System.out.println("Студента с таким номером не существует");
+      }
     }
   }
 }

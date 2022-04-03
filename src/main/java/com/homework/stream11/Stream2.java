@@ -22,11 +22,10 @@ public class Stream2 {
         InputStream inputStream = Files.newInputStream(Paths.get(scanner.nextLine()));
         OutputStream outputStream = Files.newOutputStream(Paths.get(scanner.nextLine()))
     ) {
-      int size = 1024;
-      byte[] buffer = new byte[size];
+      byte[] buffer = new byte[1024];
       while (inputStream.available() > 0) {
-        int read = inputStream.read();
-        outputStream.write(buffer, size, read);
+        int read = inputStream.read(buffer);
+        outputStream.write(buffer, 0, read);
         System.out.println(read);
       }
     } catch (Exception e) {

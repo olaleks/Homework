@@ -1,5 +1,7 @@
 package com.homework.methods5;
 
+import java.util.Scanner;
+
 /**
  * Давай напишем реализацию калькулятора, который будет считать степени чисел.
  * Для этого создай метод cube(). В качестве аргумента он должен принимать целочисленное значение типа long.
@@ -15,7 +17,14 @@ public class Method7 {
 
   public static void main(String[] args) {
 
-  }
-
-  //напишите тут ваш код
+  Scanner scanner = new Scanner(System.in);
+  long num = scanner.nextLong();
+  long n = cube(num);
+    System.out.println(n);
 }
+
+  public static long cube(long number){
+    return  (long) Math.pow(number, 3);
+  }
+}
+
