@@ -1,6 +1,8 @@
 package com.homework.stream11;
 
 import java.io.IOException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Scanner;
 
@@ -20,7 +22,12 @@ public class File4 {
   public static void main(String[] args) throws IOException {
     Scanner scanner = new Scanner(System.in);
     Path sourceDirectory = Path.of(scanner.nextLine());
-    Path targetDirectory = Path.of(scanner.nextLine());
-    //напишите тут ваш код
+    String targetDirectory = scanner.nextLine();
+    DirectoryStream<Path> pathList = Files.newDirectoryStream(sourceDirectory);
+    for (Path path : pathList) {
+      if (Files.isRegularFile(path)) {
+        Files.move(path, Path.of(targetDirectory, path.getFileName().toString()));
+      }
+    }
   }
 }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Перед тем, как космический корабль отправится бороздить просторы Вселенной, необходимо пригласить на борт экипаж,
  * который будет состоять из 2 людей, 1 собаки и 1 кота.
  * В методе createCrew() добавь необходимое количество экземпляров соответствующих классов в список astronauts.
- *
+ * <p>
  * Подсказка:
  * Чтобы добавить объекты разных классов в один список, им нужен общий предок. Унаследуй интересующие тебя классы от Astronaut.
  * Кто угодно может стать исследователем космоса :)
@@ -18,25 +18,25 @@ import java.util.ArrayList;
  */
 
 public class Solution {
-  public static ArrayList<Astronaut> astronauts = new ArrayList<>();
+    public static ArrayList<Astronaut> astronauts = new ArrayList<>();
 
 
-  public static void main(String[] args) {
-    createCrew();
-    printCrewInfo();
-  }
-
-  public static void createCrew(){
-    astronauts.add(new Human());
-    astronauts.add(new Human());
-    astronauts.add(new Dog());
-    astronauts.add(new Cat());
-  }
-
-  public static void printCrewInfo() {
-    System.out.println("На борт погружены члены экипажа: ");
-    for (Astronaut astronaut : astronauts) {
-      System.out.println(astronaut.getInfo());
+    public static void main(String[] args) {
+        createCrew();
+        printCrewInfo();
     }
-  }
+
+    public static void createCrew() {
+        astronauts.add(new Human());
+        astronauts.add(new Human());
+        astronauts.add(new Dog());
+        astronauts.add(new Cat());
+    }
+
+    public static void printCrewInfo() {
+        System.out.println("На борт погружены члены экипажа: ");
+        for (Astronaut astronaut : astronauts) {
+            System.out.println(astronaut.getInfo());
+        }
+    }
 }

@@ -6,7 +6,7 @@ package com.homework.oop7.poliformism.geometriya;
  * Для Triangle — "Треугольник";
  * Rectangle — "Прямоугольник";
  * Circle — "Круг".
- *
+ * <p>
  * Метод main() в тестировании участия не принимает.
  * Требования:
  * •	Класс Shape не изменяй.
@@ -16,14 +16,14 @@ package com.homework.oop7.poliformism.geometriya;
  */
 
 public class Solution {
-  public static void main(String[] args) {
-    Shape shape = new Shape();
-    Circle circle = new Circle();
-    Rectangle rectangle = new Rectangle();
-    Triangle triangle = new Triangle();
-    shape.printInfo();
-    circle.printInfo();
-    rectangle.printInfo();
-    triangle.printInfo();
-  }
+    public static void main(String[] args) {
+        Shape shape = new Shape();
+        Circle circle = new Circle();
+        Rectangle rectangle = new Rectangle();
+        Triangle triangle = new Triangle();
+        shape.printInfo();
+        circle.printInfo();
+        rectangle.printInfo();
+        triangle.printInfo();
+    }
 }

@@ -20,5 +20,39 @@ public class Method5 {
 
   }
 
-  //напишите тут ваш код
+  public static void universalMethod(String name) {
+
+  }
+
+  public static void universalMethod(String name, String lastName) {
+
+  }
+
+  public static void universalMethod(int id, String lastName) {
+
+  }
+
+  public static void universalMethod(int id, String name, int age) {
+
+  }
+
+  public static void universalMethod(int id, String first, String lastName, int age, int weight) {
+
+  }
+
+  public static void universalMethod(String name, String lastName, int age) {
+
+  }
+
+  public static void universalMethod(String lastName, int age) {
+
+  }
+
+  public static void universalMethod(String nickname, int height, int weight) {
+
+  }
+
+  public static void universalMethod(int id) {
+
+  }
 }

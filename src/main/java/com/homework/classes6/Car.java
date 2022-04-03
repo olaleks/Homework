@@ -12,7 +12,7 @@ package com.homework.classes6;
 
 
 public class Car {
-  private static String modelName;
+  private String modelName;
   private int speed;
   public String getModelName() {
     return modelName;

@@ -1,5 +1,10 @@
 package com.homework.stream11;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.Scanner;
+
 /**
  * Напиши программу, которая считывает из консоли имя текстового файла,
  * далее читает символы из этого файла (используй метод readAllLines(Path) класса Files) и выводит на экран все,
@@ -12,7 +17,19 @@ package com.homework.stream11;
  */
 public class Stream3 {
 
-  public static void main(String[] args) {
-    //напишите тут ваш код
-  }
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            List<String> lines = Files.readAllLines(Paths.get(scanner.nextLine()));
+            for (String str : lines) {
+                char[] chars = str.toCharArray();
+                for (char character : chars) {
+                    if (character != ' ' && character != ',' && character != '.') {
+                        System.out.println(character);
+                    }
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("error");
+        }
+    }
 }

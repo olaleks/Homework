@@ -1,5 +1,8 @@
 package com.homework.exception8;
 
+import java.io.FileNotFoundException;
+import java.nio.file.FileSystemException;
+
 /**
  * В методе copyFile перехвати исключения, которые бросают методы readFile и writeFile.
  * Перехваченные исключения оберни в RuntimeException и пробрось дальше.
@@ -16,8 +19,11 @@ public class Exceptions8 {
   }
 
   static void copyFile(String sourceFile, String destinationFile) {
-//    FileUtils.readFile(sourceFile);
-//    FileUtils.writeFile(destinationFile);
-    //напишите тут ваш код
+    try {
+      FileUtils.readFile(sourceFile);
+      FileUtils.writeFile(destinationFile);
+    } catch (FileNotFoundException | FileSystemException e) {
+      throw new RuntimeException();
+    }
   }
 }

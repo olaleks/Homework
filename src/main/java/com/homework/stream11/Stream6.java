@@ -1,6 +1,11 @@
 package com.homework.stream11;
 
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Scanner;
 
 /**
  * У Амиго появилась задача: записать байты в файл. Он написал программу, которая считывает из консоли путь к файлу и записывает в этот файл последовательность байтов, полученную из аргумента метода main(String[]). Но в процессе написания программы он допустил ошибку.
@@ -16,13 +21,13 @@ import java.io.IOException;
 public class Stream6 {
 
   public static void main(String[] args) throws IOException {
-//    byte[] bytes = args[0].getBytes();
-//    try (InputStream stream = System.in;
-//        Scanner scanner = new Scanner(stream);
-//        BufferedWriter bufferedWriter = Files.newBufferedWriter(Path.of(scanner.nextLine()))) {
-//      bufferedWriter.write(bytes);
-//    } catch (IOException e) {
-//      System.out.println("Something went wrong : " + e);
-//    }
+    byte[] bytes = args[0].getBytes();
+    try (InputStream stream = System.in;
+         Scanner scanner = new Scanner(stream);
+         BufferedWriter bufferedWriter = Files.newBufferedWriter(Path.of(scanner.nextLine()))) {
+      bufferedWriter.write(String.valueOf(bytes));
+    } catch (IOException e) {
+      System.out.println("Something went wrong : " + e);
+    }
   }
 }

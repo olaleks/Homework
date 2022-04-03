@@ -22,7 +22,7 @@ public class InterfaceDifficult1 {
   }
   static class StringObject implements SimpleObject<String>{
     public SimpleObject<String> getInstance(){
-      return this;
+      return null;
     }
   }
 }

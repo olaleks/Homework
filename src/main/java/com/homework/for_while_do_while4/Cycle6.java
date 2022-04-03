@@ -12,7 +12,12 @@ package com.homework.for_while_do_while4;
 public class Cycle6 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-
+    int a = 1;
+    int b = 15;
+    for (int i = a; i < b ; i++) {
+      if (i % 2 == 0){
+        System.out.println(i);
+      }
+    }
   }
 }

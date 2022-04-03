@@ -1,25 +1,25 @@
 package com.homework.exception8;
 
 /**
- * РЎРґРµР»Р°Р№ С‚Р°Рє, С‡С‚РѕР±С‹ РїСЂРѕРіСЂР°РјРјР° РєРѕРјРїРёР»РёСЂРѕРІР°Р»Р°СЃСЊ, РЅРµ РёСЃРїРѕР»СЊР·СѓСЏ try-catch.
- * РўСЂРµР±РѕРІР°РЅРёСЏ:
- * вЂў	Р’ РјРµС‚РѕРґРµ main РЅРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р±Р»РѕРєР° try-catch.
- * вЂў	РњРµС‚РѕРґ main РґРѕР»Р¶РµРЅ Р±СЂРѕСЃР°С‚СЊ РёСЃРєР»СЋС‡РµРЅРёРµ.
- * вЂў	РњРµС‚РѕРґ main РґРѕР»Р¶РµРЅ РІС‹Р·С‹РІР°С‚СЊ РјРµС‚РѕРґ generateLuckyNumber().
- * вЂў	РњРµС‚РѕРґ generateLuckyNumber РёР·РјРµРЅСЏС‚СЊ РЅРµР»СЊР·СЏ.
+ * Сделай так, чтобы программа компилировалась, не используя try-catch.
+ * Требования:
+ * •	В методе main не должно быть блока try-catch.
+ * •	Метод main должен бросать исключение.
+ * •	Метод main должен вызывать метод generateLuckyNumber().
+ * •	Метод generateLuckyNumber изменять нельзя.
  */
 
 public class Exceptions7 {
 
-  public static void main(String[] args) {
-//    generateLuckyNumber();
+  public static void main(String[] args) throws Exception {
+    generateLuckyNumber();
   }
 
   static void generateLuckyNumber() throws Exception {
     int luckyNumber = (int) (Math.random() * 100);
     if (luckyNumber == 13) {
-      throw new Exception("РЅРµ РїРѕРІРµР·Р»Рѕ");
+      throw new Exception("не повезло");
     }
-    System.out.println("С‚РІРѕРµ СЃС‡Р°СЃС‚Р»РёРІРѕРµ С‡РёСЃР»Рѕ: " + luckyNumber);
+    System.out.println("твое счастливое число: " + luckyNumber);
   }
 }

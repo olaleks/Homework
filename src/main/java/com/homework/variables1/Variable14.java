@@ -15,9 +15,9 @@ package com.homework.variables1;
 public class Variable14 {
 
   public class Earth {
-    public String name = "Земля";
-    public double square = 510_100_000;
-    public long population = 7_594_000_000L;
-    public long equatorLength = 40_075_696;
+    public static final String name = "Земля";
+    public  static final double square = 510_100_000;
+    public static final long population = 7_594_000_000L;
+    public static final long equatorLength = 40_075_696;
   }
 }

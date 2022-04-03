@@ -23,9 +23,11 @@ public class Method8 {
 
   }
 
-  public static long cube(long a){
-    return a*a*a;
+  public static long cube(long a) {
+    return a * a * a;
   }
 
-  //напишите тут ваш код
+  public static long ninthDegree(long b) {
+    return cube(cube(b));
+  }
 }
