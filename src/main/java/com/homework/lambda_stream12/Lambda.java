@@ -3,7 +3,6 @@ package com.homework.lambda_stream12;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.stream.Collectors;
 
 /**
  * Перед тобой программа, которая сортирует список чисел по возрастанию.
