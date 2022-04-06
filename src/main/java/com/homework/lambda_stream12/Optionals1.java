@@ -42,7 +42,7 @@ public class Optionals1 {
     Optional<Car> mostExpensiveCar = getMostExpensiveCar(tesla);
     mostExpensiveCar.ifPresent(System.out::println);
 
-    Optional<Car> moreExpensiveCar = mostExpensiveCar.flatMap(Car -> getMoreExpensiveCar(bmw, Car));
+    Optional<Car> moreExpensiveCar = mostExpensiveCar.flatMap(car -> getMoreExpensiveCar(bmw, car));
     moreExpensiveCar.ifPresent(System.out::println);
   }
 
@@ -55,6 +55,7 @@ public class Optionals1 {
     //напишите тут ваш код
     return Optional.empty();
   }
+
 }
 
 
