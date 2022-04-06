@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 
 /**
  * У автомобиля, представленного классом Car, есть две характеристики: название - поле name, цена - поле price.
- * В классе Solution выполняются две операции поиска:
+ * В классе Optionals2 выполняются две операции поиска:
  *
  * метод getCheapestCar(Stream<Car>) ищет самый дешевый автомобиль в одном списке;
  * метод getCheaperCar(Stream<Car>, Car) в другом списке ищет автомобиль дешевле, чем полученный в методе getCheapestCar(Stream<Car>).
@@ -41,7 +41,7 @@ public class Optionals2 {
     Optional<Car> cheapestCar = getCheapestCar(tesla);
     cheapestCar.ifPresent(System.out::println);
 
-    Optional<Car> cheaperCar = cheapestCar.flatMap(Car -> getCheaperCar(bmw, Car));
+    Optional<Car> cheaperCar = cheapestCar.flatMap(car -> getCheaperCar(bmw, car));
     cheaperCar.ifPresent(System.out::println);
   }
 
