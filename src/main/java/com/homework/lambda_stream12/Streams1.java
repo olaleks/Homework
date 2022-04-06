@@ -12,7 +12,8 @@ import java.util.stream.Stream;
  * сортировал полученный список языков программирования по убыванию рейтинга, и возвращал отсортированный поток данных (Stream<Language>).
  *
  * Подсказка:
- * Поскольку поле рейтинг имеет тип Double, для сортировки нужно использовать статический метод compare(Double, Double) класса Double или метод compareTo(Double) объекта типа Double.
+ * Поскольку поле рейтинг имеет тип Double, для сортировки нужно использовать статический метод compare(Double, Double)
+ * класса Double или метод compareTo(Double) объекта типа Double.
  *
  * Метод main() не принимает участие в тестировании.
  * Требования:
@@ -40,7 +41,7 @@ public class Streams1 {
 
   public static Stream<Language> sortByRanking(ArrayList<Language> languages) {
     //напишите тут ваш код
-    return languages.stream().sorted();
+    return Stream.empty();
   }
 
 }
