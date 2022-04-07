@@ -24,7 +24,7 @@ public class Streams1 {
   public static void main(String[] args) {
     ArrayList<Language> languages = new ArrayList<>();
     Collections.addAll(languages,
-        new Language("С#", 4.58),
+        new Language("C#", 4.58),
         new Language("JavaScript", 2.54),
         new Language("Python", 10.47),
         new Language("C++", 7.11),

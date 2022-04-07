@@ -48,7 +48,7 @@ public class Optionals1 {
 
   public static Optional<Car> getMostExpensiveCar(Stream<Car> car) {
     //напишите тут ваш код
-    return Optional.empty();
+return Optional.empty();
   }
 
   public static Optional<Car> getMoreExpensiveCar(Stream<Car> car, Car mostExpensiveCar) {
