@@ -29,6 +29,10 @@ public class Solution {
     plot.add(new Person("Дедка", "Дедку"));
     plot.add(new Person("Бабка", "Бабку"));
     plot.add(new Person("Внучка", "Внучку"));
+    plot.add(new Person("Жучка", "Жучку"));
+    plot.add(new Person("Кошка", "Кошку"));
+    plot.add(new Person("Мышка", "Мышку"));
     RepkaStory.tell(plot);
+    System.out.println("И вытянули репку!");
   }
 }
