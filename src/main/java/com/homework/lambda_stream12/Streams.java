@@ -1,6 +1,7 @@
 package com.homework.lambda_stream12;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.stream.Stream;
 
@@ -34,13 +35,11 @@ public class Streams {
   }
 
   public static Stream<String> getStreamFromArrayList(ArrayList<String> list) {
-    //напишите тут ваш код
-    return Stream.empty();
+    return list.stream();
   }
 
   public static Stream<Integer> getStreamFromArray(Integer[] array) {
-    //напишите тут ваш код
-    return Stream.empty();
+    return Arrays.stream(array);
   }
 
 }

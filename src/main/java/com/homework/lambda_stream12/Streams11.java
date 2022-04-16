@@ -2,6 +2,7 @@ package com.homework.lambda_stream12;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -25,7 +26,6 @@ public class Streams11 {
   }
 
   public static Map<String, Integer> getMap(Stream<String> stringStream) {
-    //напишите тут ваш код
-    return new HashMap<>();
+    return stringStream.collect(Collectors.toMap(String -> String, String -> String.length()));
   }
 }

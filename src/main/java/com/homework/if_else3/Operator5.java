@@ -33,7 +33,7 @@ public class Operator5 {
       System.out.println(num2 + " " + num3);
     } else if(num1 ==num3){
       System.out.println(num1 + " " + num3);
-    } else {}
+    }
 
   }
 

@@ -29,14 +29,18 @@ public class Cycle8 {
     Scanner scanner = new Scanner(System.in);
     String str = scanner.nextLine();
     int number = scanner.nextInt();
-    int i = 0;
-    if (number > 0 && number < 5) {
-      do {
-        System.out.println(str);
-        i++;
-      } while (i < number);
-    } else{
+//    int i = 0;
+//    if (number > 0 && number < 5) {
+//      do {
+//        System.out.println(str);
+//        i++;
+//      } while (i < number);
+//    } else{
+//      System.out.println(str);
+//    }
+    do {
       System.out.println(str);
-    }
+      number--;
+    } while (number > 0 && number < 4);
   }
 }

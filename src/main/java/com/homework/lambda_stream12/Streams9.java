@@ -2,6 +2,7 @@ package com.homework.lambda_stream12;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -24,8 +25,9 @@ public class Streams9 {
   }
 
   public static List<Integer> getPositiveNumbers(Stream<Integer> numbers) {
-    //напишите тут ваш код
-    return new ArrayList<>();
+    return numbers
+            .filter(integer -> integer > 0)
+            .collect(Collectors.toList());
   }
 
 }

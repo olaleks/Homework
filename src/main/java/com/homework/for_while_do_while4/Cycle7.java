@@ -23,9 +23,10 @@ public class Cycle7 {
 
     int sum = 0;
     for (int i = start; i < end ; i++) {
-      if (i % multiple == 0){
-        sum = sum + i;
+      if (i % multiple != 0){
+        continue;
       }
+      sum = sum + i;
     }
     System.out.println(sum);
   }

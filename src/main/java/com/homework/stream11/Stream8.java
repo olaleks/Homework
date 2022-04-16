@@ -38,9 +38,9 @@ public class Stream8 {
     String result = outputStream.toString();
     outputStream.reset();
     StringBuilder stringBuilder = new StringBuilder(result);
-    stringBuilder = stringBuilder.reverse();
-    printSomething(stringBuilder.toString());
-    System.out.println(outputStream.toString());
+    stringBuilder = stringBuilder.reverse();  //String reverse = stringBuilder.reverse().toString();
+    printSomething(stringBuilder.toString());  //printSomething(reverse);
+    System.out.println(outputStream.toString());  //System.out.println(outputStream);
   }
 
   public static void printSomething(String str) {

@@ -26,7 +26,11 @@ public class Set2 {
   public static HashSet<String> words = new HashSet<>(asList("Если бы меня попросили выбрать язык на замену Java я бы не выбирал".split(" ")));
 
   public static void checkWords(String word) {
-    //напишите тут ваш код
+    if (words.contains(word)) {
+      System.out.printf("Слово %s есть в множестве%n", word);
+    } else {
+      System.out.printf("Слово %s нет в множестве%n", word);
+    }
   }
 
   public static void main(String[] args) {

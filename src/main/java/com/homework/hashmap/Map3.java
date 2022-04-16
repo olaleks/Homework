@@ -34,5 +34,10 @@ public class Map3 {
     for (String name : grades.keySet()){
       System.out.println(name + ": " + grades.get(name));
     }
+//    for (Map.Entry<String, Double> pair : grades.entrySet()){
+//      String key = pair.getKey();
+//      Double value = pair.getValue();
+//      System.out.println(key + " : " + value); //у меня не работает этот код - Entry, getKey, getValue - не может определить
+//    }
   }
 }

@@ -29,5 +29,7 @@ public class Stream6 {
     } catch (IOException e) {
       System.out.println("Something went wrong : " + e);
     }
+//    Scanner scanner = new Scanner(System.in);
+//    Files.write(Path.of(scanner.nextLine()), bytes);
   }
 }

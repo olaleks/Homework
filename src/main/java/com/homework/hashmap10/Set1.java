@@ -3,16 +3,16 @@ package com.homework.hashmap10;
 import java.util.HashSet;
 
 /**
- * В классе Set1 есть метод arrayToHashSet(String[]), который должен из переданного массива вернуть HashSet<String> с теми же элементами.
- * Метод main не участвует в проверке.
- * Требования:
- * •	В классе Set1 должен быть public static HashSet<String> arrayToHashSet(String[]) метод.
- * •	Метод arrayToHashSet(String[]) должен быть реализован согласно условию.
+ * Р’ РєР»Р°СЃСЃРµ Set1 РµСЃС‚СЊ РјРµС‚РѕРґ arrayToHashSet(String[]), РєРѕС‚РѕСЂС‹Р№ РґРѕР»Р¶РµРЅ РёР· РїРµСЂРµРґР°РЅРЅРѕРіРѕ РјР°СЃСЃРёРІР° РІРµСЂРЅСѓС‚СЊ HashSet<String> СЃ С‚РµРјРё Р¶Рµ СЌР»РµРјРµРЅС‚Р°РјРё.
+ * РњРµС‚РѕРґ main РЅРµ СѓС‡Р°СЃС‚РІСѓРµС‚ РІ РїСЂРѕРІРµСЂРєРµ.
+ * РўСЂРµР±РѕРІР°РЅРёСЏ:
+ * вЂў	Р’ РєР»Р°СЃСЃРµ Set1 РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ public static HashSet<String> arrayToHashSet(String[]) РјРµС‚РѕРґ.
+ * вЂў	РњРµС‚РѕРґ arrayToHashSet(String[]) РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ СЂРµР°Р»РёР·РѕРІР°РЅ СЃРѕРіР»Р°СЃРЅРѕ СѓСЃР»РѕРІРёСЋ.
  */
 
 public class Set1 {
   public static void main(String[] args) {
-    String[] array = {"Через", "три", "года", "я", "буду", "Senior", "Java", "Developer"};
+    String[] array = {"Р§РµСЂРµР·", "С‚СЂРё", "РіРѕРґР°", "СЏ", "Р±СѓРґСѓ", "Senior", "Java", "Developer"};
     for (int i = 0; i < array.length; i++) {
       System.out.println(array[i]);
     }
@@ -25,6 +25,10 @@ public class Set1 {
   }
 
   public static HashSet<String> arrayToHashSet(String[] strings) {
-    return null;//напишите тут ваш код
+    HashSet<String> hashSet = new HashSet<>();
+    for (int i = 0; i < strings.length; i++){
+      hashSet.add(strings[i]);
+    }
+    return hashSet;
   }
 }

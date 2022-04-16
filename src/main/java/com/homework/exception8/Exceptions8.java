@@ -23,7 +23,7 @@ public class Exceptions8 {
       FileUtils.readFile(sourceFile);
       FileUtils.writeFile(destinationFile);
     } catch (FileNotFoundException | FileSystemException e) {
-      throw new RuntimeException();
+      throw new RuntimeException(e);
     }
   }
 }

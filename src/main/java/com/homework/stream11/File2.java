@@ -13,10 +13,10 @@ import java.util.Scanner;
  * "<путь к директории> - это директория", если это директория.
  * Треугольные скобки и кавычки выводить не нужно.
  * Используй соответствующие методы класса Files: newDirectoryStream(Path), isRegularFile(Path) и isDirectory(Path).
- *
+ * <p>
  * Ввод:
  * C:\home\
- *
+ * <p>
  * Вывод:
  * C:\home\test.txt - это файл
  * C:\home\tasks - это директория
@@ -31,19 +31,20 @@ import java.util.Scanner;
 public class File2 {
 
 
-  private static final String THIS_IS_FILE = " - this is file";
-  private static final String THIS_IS_DIR = " - this is directory";
+    private static final String THIS_IS_FILE = " - this is file";
+    private static final String THIS_IS_DIR = " - this is directory";
 
-  public static void main(String[] args) throws IOException {
-    Scanner scanner = new Scanner(System.in);
-    Path directory = Path.of(scanner.nextLine());
-    DirectoryStream<Path> pathList = Files.newDirectoryStream(directory);
-    for (Path path : pathList) {
-      if (Files.isDirectory(path)) {
-        System.out.println(path + THIS_IS_DIR);
-      } else if (Files.isRegularFile(path)) {
-        System.out.println(path + THIS_IS_FILE);
-      }
+    public static void main(String[] args) throws IOException {
+        Scanner scanner = new Scanner(System.in);
+        Path directory = Path.of(scanner.nextLine());
+        try (DirectoryStream<Path> pathList = Files.newDirectoryStream(directory)) {
+            for (Path path : pathList) {
+                if (Files.isDirectory(path)) {
+                    System.out.println(path + THIS_IS_DIR);
+                } else if (Files.isRegularFile(path)) {
+                    System.out.println(path + THIS_IS_FILE);
+                }
+            }
+        }
     }
-  }
 }

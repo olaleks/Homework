@@ -33,8 +33,11 @@ public class List {
     }
 
     public static void reverse() {
-        for (int i = numbers.size() - 1; i >= 0; i--) {
-            numbers.add(i);
+        int n = numbers.size() - 1;
+        for (int i = 0; i < numbers.size() / 2; i++) {
+            int temp = numbers.get(i);
+            numbers.set(i, numbers.get(n - i));
+            numbers.set(n - i, temp);
         }
     }
 

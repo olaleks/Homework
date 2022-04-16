@@ -23,5 +23,7 @@ public class Operator8 {
     } else {
       System.out.println("число равно 5");
     }
+//    String result = number < 5 ? "число меньше 5" : number > 5 ? "число больше 5" : "число равно 5";
+//    System.out.println(result);
   }
 }

@@ -36,10 +36,13 @@ public class List6 {
     }
 
     public static void paySalary(String name) {
-        alreadyGotSalaryEmployees.addAll(waitingEmployees);
-        for (int i = 0; i < waitingEmployees.size(); i++) {
-            if (waitingEmployees.get(i).contains((name))) {
-                waitingEmployees.set(i, null);
+        if (waitingEmployees.contains(name) && !alreadyGotSalaryEmployees.contains(name)) {
+            alreadyGotSalaryEmployees.add(name);
+            for (int i = 0; i < waitingEmployees.size(); i++) {
+                if (waitingEmployees.get(i) != null && waitingEmployees.get(i).equals(name)) {
+                    waitingEmployees.set(i, null);
+                    break;
+                }
             }
         }
     }

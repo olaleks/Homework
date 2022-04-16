@@ -6,7 +6,7 @@ public class Window {
 
   public void changeSize(int height, int width){
     this.height = height;
-    width = width;
+    this.width = width;
   }
 
   public void printSize(){

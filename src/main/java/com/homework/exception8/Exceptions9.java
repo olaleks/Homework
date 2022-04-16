@@ -33,6 +33,5 @@ public class Exceptions9 {
         System.out.println(FAILED_TO_READ);
       }
     }
-
   }
 }

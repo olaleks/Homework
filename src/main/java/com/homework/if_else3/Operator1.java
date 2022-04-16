@@ -25,6 +25,7 @@ public class Operator1 {
     Scanner scanner = new Scanner(System.in);
     String name = scanner.nextLine();
     int age = scanner.nextInt();
+    scanner.close();
     if (age<=28 && age>=18){
       System.out.println(name + militaryCommissar);
     }

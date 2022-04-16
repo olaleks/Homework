@@ -46,13 +46,12 @@ public class Optionals2 {
   }
 
   public static Optional<Car> getCheapestCar(Stream<Car> car) {
-    //напишите тут ваш код
-    return Optional.empty();
+    return car.min((a, b) -> a.getPrice() - b.getPrice());
   }
 
   public static Optional<Car> getCheaperCar(Stream<Car> car, Car cheapestCar) {
-    //напишите тут ваш код
-    return Optional.empty();
+    return car
+            .filter(car1 -> car1.getPrice() < cheapestCar.getPrice())
+            .findFirst();
   }
-
 }

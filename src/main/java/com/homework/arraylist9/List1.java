@@ -26,8 +26,8 @@ public class List1 {
     }
 
     public static void sort() {
-        for (int i = numbers.length - 1; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
+        for (int i = numbers.length - 1; i > 0; i--) {  //for (int i = 0; i < numbers.length - 1; i++)
+            for (int j = 0; j < i; j++) {  //for (int j = 0; j < number.length - i - 1; j++)
                 if (numbers[j] > numbers[j + 1]) {
                     int temp = numbers[j];
                     numbers[j] = numbers[j + 1];
@@ -38,7 +38,7 @@ public class List1 {
     }
 
     public static void print() {
-        for (int i = 0; i < numbers.length; i++)
-        System.out.print(numbers[i] + "\t");
+        for (int i = 0; i < numbers.length; i++)  //for (int number : numbers){
+        System.out.print(numbers[i] + "\t");  //System.out.print(number + "\t")
     }
 }

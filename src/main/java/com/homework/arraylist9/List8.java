@@ -51,7 +51,7 @@ public class List8 {
   }
 
   public static void removeBugWithFor(ArrayList<String> list) {
-    int size = list.size();
+    int size = list.size();  // иначе организовала цикл for - но вроде работает
     for (int i = size-1; i >= 0; i--) {
       String str = list.get(i);
       if (str.equalsIgnoreCase("bug")){
@@ -73,7 +73,7 @@ public class List8 {
   public static void removeBugWithCopy(ArrayList<String> list) {
     ArrayList<String> copy = new ArrayList<>(list);
     for (String str : copy) {
-      if (str.equalsIgnoreCase("bug")){
+      if (str.equalsIgnoreCase("bug")){ //сравнивала строку со словом баг, а у вас наоборот
         list.remove(str);
       }
 

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static com.homework.lambda_stream12.streamexample.Selector.initData;
 import static com.homework.lambda_stream12.streamexample.Selector.owners;
@@ -35,13 +36,13 @@ public class Main {
       findNames.add(cat.getName());
     }
 
-    //   final List<String> findNames = owners.stream()
-    //           .flatMap(owner -> owner.getPets().stream()) // переход от Stream<Owner> к Stream<Pet>
-    //           .filter(pet -> Cat.class.equals(pet.getClass())) // в потоке данных оставляем только котов
-    //           .filter(cat -> Color.FOXY == cat.getColor()) // в потоке данных оставляем только рыжих
-    //           .sorted((o1, o2) -> o2.getAge() - o1.getAge()) / сортируем по возрасту в убывающем порядке
-    //           .map(Animal::getName) // берем имена
-    //           .collect(Collectors.toList()); // результат складываем в список
+    findNames = owners.stream()
+            .flatMap(owner -> owner.getPets().stream()) // переход от Stream<Owner> к Stream<Pet>
+            .filter(pet -> Cat.class.equals(pet.getClass())) // в потоке данных оставляем только котов
+            .filter(cat -> Color.FOXY == cat.getColor()) // в потоке данных оставляем только рыжих
+            .sorted((o1, o2) -> o2.getAge() - o1.getAge()) // сортируем по возрасту в убывающем порядке
+            .map(Animal::getName) // берем имена
+            .collect(Collectors.toList());
 
     findNames.forEach(System.out::println);
   }

@@ -43,11 +43,12 @@ public class List5 {
   public static void removeGlassesReverse(ArrayList<String> glasses) {
     System.out.println("Начинаем разбирать пирамиду...");
 
-    while (glasses.size()>0){
-      glasses.remove(glasses.size()-1);
+    for (int i = glasses.size() - 1; i >= 0; i--){
+      glasses.remove(i);
     }
-    System.out.println("Пирамида разобрана!");
-
+    if (glasses.size() == 0) {
+      System.out.println("Пирамида разобрана!");
+    }
   }
 
   public static void main(String[] args) {

@@ -22,11 +22,13 @@ public class File4 {
   public static void main(String[] args) throws IOException {
     Scanner scanner = new Scanner(System.in);
     Path sourceDirectory = Path.of(scanner.nextLine());
-    String targetDirectory = scanner.nextLine();
-    DirectoryStream<Path> pathList = Files.newDirectoryStream(sourceDirectory);
-    for (Path path : pathList) {
-      if (Files.isRegularFile(path)) {
-        Files.move(path, Path.of(targetDirectory, path.getFileName().toString()));
+    Path targetDirectory = Path.of(scanner.nextLine());
+    try (DirectoryStream<Path> pathList = Files.newDirectoryStream(sourceDirectory)) {
+      for (Path path : pathList) {
+        if (Files.isRegularFile(path)) {
+          Path resolve = targetDirectory.resolve(path.getFileName());
+          Files.move(path, resolve);
+        }
       }
     }
   }

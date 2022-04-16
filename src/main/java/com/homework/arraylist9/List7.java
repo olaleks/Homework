@@ -24,7 +24,8 @@ public class List7 {
   }
 
   public static void createNewPlanet(String planetName) {
-    planets.add(3, planetName);
+
+    planets.add(planets.indexOf("Земля") + 1, planetName);  //я просто указывала индекс планеты - 3(посмотрев список планет)
   }
 
   public static void addPlanets() {

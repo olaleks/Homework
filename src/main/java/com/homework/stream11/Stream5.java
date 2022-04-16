@@ -29,4 +29,5 @@ public class Stream5 {
       }
       System.out.println(characters);
     }
+
 }

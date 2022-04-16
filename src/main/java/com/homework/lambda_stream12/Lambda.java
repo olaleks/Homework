@@ -32,12 +32,15 @@ public class Lambda {
   }
 
   public static void sortNumbers(ArrayList<Integer> numbers) {
-    Comparator<Integer> comparator = new Comparator<Integer>() {
+
+    numbers.sort(Comparator.comparingInt((Integer i) -> i));
+    /*numbers.sort((Integer i1, Integer i2) -> i1 - i2);
+    /*Comparator<Integer> comparator = new Comparator<Integer>() {
       @Override
       public int compare(Integer i1, Integer i2) {
         return i1 - i2;
       }
     };
-    Collections.sort(numbers, comparator);
+    Collections.sort(numbers, comparator);*/
   }
 }

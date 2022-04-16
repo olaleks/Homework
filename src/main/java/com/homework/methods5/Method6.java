@@ -14,16 +14,16 @@ package com.homework.methods5;
 
 public class Method6 {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-  }
-
-  public static void signIn(String username){
-    if (username.equalsIgnoreCase("user")) {
-      return;
-    } else {
-      System.out.println("Добро пожаловать " + username);
-      System.out.println("Очень скучали по Вам, " + username);
     }
-  }
+
+    public static void signIn(String username) {
+        if (username.equalsIgnoreCase("user")) {
+            return;
+        } else {
+            System.out.println("Добро пожаловать " + username);
+            System.out.println("Очень скучали по Вам, " + username);
+        }
+    }
 }

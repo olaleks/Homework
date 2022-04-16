@@ -26,7 +26,6 @@ public class Streams3 {
   }
 
   public static Stream<String> getDistinctWords(ArrayList<String> words) {
-    //напишите тут ваш код
-    return Stream.empty();
+    return words.stream().distinct();
   }
 }

@@ -47,13 +47,14 @@ public class Optionals1 {
   }
 
   public static Optional<Car> getMostExpensiveCar(Stream<Car> car) {
-    //напишите тут ваш код
-return Optional.empty();
+     return car.max((a, b) -> a.getPrice() - b.getPrice());
   }
 
   public static Optional<Car> getMoreExpensiveCar(Stream<Car> car, Car mostExpensiveCar) {
-    //напишите тут ваш код
-    return Optional.empty();
+
+    return car
+            .filter(car1 -> car1.getPrice() > mostExpensiveCar.getPrice())
+            .findFirst();
   }
 
 }

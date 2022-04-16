@@ -3,6 +3,7 @@ package com.homework.lambda_stream12;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Задача метода printList(List<String>) — вывести в консоли все элементы списка,
@@ -29,6 +30,6 @@ public class Optionals {
 
   public static void printList(List<String> list) {
     String text = "Этот элемент равен null";
-    //напишите тут ваш код
+    list.forEach(s -> System.out.println(Optional.ofNullable(s).orElse(text)));
   }
 }

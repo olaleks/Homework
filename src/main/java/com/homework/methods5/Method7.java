@@ -17,14 +17,15 @@ public class Method7 {
 
   public static void main(String[] args) {
 
-  Scanner scanner = new Scanner(System.in);
-  long num = scanner.nextLong();
-  long n = cube(num);
-    System.out.println(n);
+//  Scanner scanner = new Scanner(System.in);
+//  long num = scanner.nextLong();
+//    System.out.println(cube(num));
 }
 
   public static long cube(long number){
-    return  (long) Math.pow(number, 3);
+
+//    return  (long) Math.pow(number, 3);
+    return number*number*number;
   }
 }
 
